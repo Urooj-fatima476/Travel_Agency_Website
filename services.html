@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>/* Custom Styles for Navbar */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d9eee8; /* Light grey background */
+      font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+
+    }
+    .navbar-dark {
+      background-color: #343a40;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      position: relative;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 0.5em;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #0dcaf0 !important;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav .nav-link.active {
+      border: 2px solid #0dcaf0;
+      color: #0dcaf0 !important;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav .nav-link:active {
+      color: #0dcaf0 !important;
+    }
+
+    /* Styles for search input */
+    .search-input {
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5em;
+      transition: all 0.3s ease;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border: 2px solid #0dcaf0;
+      box-shadow: none;
+    }
+
+    .input-group-text {
+      background: transparent;
+      border: none;
+    }
+    </style>
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="picture/image.png" alt="Travel Agency Logo" width="30" height="30" class="d-inline-block align-top">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blogs.html">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="book.html">Booking</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline d-flex ml-auto" role="search">
+      <div class="input-group">
+        <input type="search" class="form-control search-input" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit" id="button-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.84 1.097a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+  
+  <h2 class="text-center  mb-5 mt-5">Our Services</h2>
+  <div class="container mt-5 ">
+    
+    <div class="row">
+      <div class="col-lg-4 mb-4 ">
+        <div class="card  h-100 card border-warning">
+          <div class="card-body bg-light">
+            <h3 class="card-title ">Specialty Travel</h3>
+            <p class="card-text "> A harmonious composition dominated by shades of blue, evoking a sense of calmness, introspection, and emotional depth..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 card border-warning">
+          <div class="card-body">
+            <h3 class="card-title">Transportation Services</h3>
+            <p class="card-text"> Two figures locked in a timeless embrace, symbolizing enduring love, connection, and the eternal bond between souls..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 card border-warning">
+          <div class="card-body bg-light">
+            <h3 class="card-title">Destination Information</h3>
+            <p class="card-text">Playful interplay of light and shadow, casting dynamic patterns that seem to dance and sway with an ethereal rhythm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5" >
+    <video autoplay muted loop class="d-block mx-auto" style="width: 100%; max-width: 1000px; height: 100%; max-height: 1000px;">
+      <source src="picture\2169880-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container mt-5 ">
+   
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 card border-warning ">
+          <div class="card-body ">
+            <h3 class="card-title">Event and Activity Booking</h3>
+            <p class="card-text">Echoes of Eternity": A haunting and evocative image that resonates with echoes of the past, whispers of the future, and the eternal passage of time..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 card border-warning">
+          <div class="card-body bg-light">
+            <h3 class="card-title">Cruise Bookings</h3>
+            <p class="card-text">Whimsical Whispers": Delicate and whimsical forms that seem to whisper secrets and stories, inviting viewers into a world of imagination and enchantment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 card border-warning">
+          <div class="card-body ">
+            <h3 class="card-title ">24/7 Customer Support</h3>
+            <p class="card-text ">Mesmerizing Melody": A visual symphony that captivates the senses and stirs the soul, evoking the rhythm and melody of music in a mesmerizing dance of color and form.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-3 mt-5  ">
+  <div class="container">
+    <span>&copy; Travel Agency. All rights reserved.</span>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
